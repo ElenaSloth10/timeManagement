@@ -1,0 +1,114 @@
+@import url(./normalize.css);
+
+:root {
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    --white-color: #E5E5E5;
+    --blue-color: #008C95;
+    --lightYellow-color: #F3CD91;
+    --yellow-color: #FBB874;
+    --darkYellow-color: #E47946;
+    --dark-color: #2A3240;
+    --red-color: #A72F13;
+    --blue-second-color: #0000FF;
+  }
+
+  .body{
+    background-color: var(--white-color);
+    height: 100vh;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: var(--dark-color);
+  }
+
+  .loginBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+    margin: 1rem;
+  }
+
+  .loginField{
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-image: linear-gradient( #E47946 0%,  #008C95 100%);
+    border-image-slice: 1;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+
+  .loginField div{
+    margin: 2rem;
+  }
+
+  input[type="text"], input[type="password"]{
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid var(--blue-color);
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    outline: none;
+  }
+
+  ::placeholder{
+    color: var(--dark-color);
+    font-size: 1.3rem;
+  }
+
+  input[type="button"]{
+    border: 1px solid var(--darkYellow-color);
+    border-radius: 3px;
+    font-size: 2rem;
+    padding: 5px 20px;
+    color: var(--blue-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  input[type="button"]:hover{
+    border: 1px solid var(--darkYellow-color);
+    background-color: var(--blue-color);
+    color: var(--darkYellow-color);
+  }
+
+  .loginImg img{
+    max-width: 25rem;
+  }
+
+  input.checkTrue{
+    border: 1px solid var(--blue-second-color);
+  }
+
+  input.checkFalse{
+    border: 1px solid var(--red-color);
+  }
+
+
+
+  @media screen and (max-width: 610px) {
+    .header{
+        padding: 1rem;
+      }
+    h1 {
+        font-size: 2.4rem;
+      }
+
+    .loginImg{
+        display: none;
+    }
+  }

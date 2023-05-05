@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/board.css">
+    <link rel="icon" href="../image/favicon.png">
+    <title>Time Management Board</title>
+</head>
+<body>
+    <div class="body">
+        <header>
+            <div class="header">
+                <h1>Manage Time Effectively <span class="user">User</span></h1>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <div class="headerButtons">
+                    <input type="button" class="newTask headerButton" value="Add a new task">
+                    <input type="button" class="exit headerButton" value="Exit">
+                </div>
+                <div class="board">
+                    <div class="today">
+                        <p>Tasks for today</p>
+                        <div class="boardForToday">
+
+                        </div>
+                    </div>
+                    <div class="week"><p>Tasks for the week</p>
+                        <div class="boardForWeek">
+
+                        </div>
+                    </div>
+                    <div class="month"><p>Tasks for the month</p>
+                        <div class="boardForMonth">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-all">
+                    <div class="modal">
+                        <p class="modalX">X</p>
+                        <div class="modal-input">
+                            <div class="modalTitle">
+                                <p>Add a new task</p>
+                            </div>
+                            <div>
+                                <label for="TaskName"></label>
+                                <input type="text" id="taskName" placeholder="Enter the title">
+                            </div>
+                            <div>
+                                <label for="taskText"></label>
+                                <textarea id="taskText" rows="8" placeholder="Enter task text"></textarea>
+                            </div>
+                            <div>
+                                <select name="selectModal" id="selectModal">
+                                    <option value="urgency" selected disabled>Urgency</option>
+                                    <option value="today">Tasks for today</option>
+                                    <option value="week">Tasks for the week</option>
+                                    <option value="month">Tasks for the month</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="button" class="modalNewTask headerButton" value="Add a new task">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="../code/board.js" type="module"></script>
+</body>
+</html>
